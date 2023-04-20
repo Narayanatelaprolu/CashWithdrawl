@@ -40,11 +40,11 @@ class CashWithdrawal extends Component {
           <p className="choose-sum">CHOOSE SUM (IN RUPEES) </p>
           <ul className="denominations-list"> 
             {denominationsList.map(eacDenomination =>)
-            <DenominationItem
+              <DenominationItem
                 Key={eachDenomination.id}
                 denominationDetails={eachDenomination}
                 updateBalance={this.updateBalance}
-          />
+              />
             ))}
           </ul>
         </div>
