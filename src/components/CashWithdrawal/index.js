@@ -6,7 +6,7 @@ import './index.css'
 
 class CashWithdrawal extends Component {
   state = {
-    balance:2000,
+    balance: 2000,
   }
 
   updateBalance = value => {
@@ -37,9 +37,9 @@ class CashWithdrawal extends Component {
             </p>
           </div>
           <p className="withdraw">Withdraw</p>
-          <p className="choose-sum">CHOOSE SUM (IN RUPEES) </p>
-          <ul className="denominations-list"> 
-            {denominationsList.map(eacDenomination =>)
+          <p className="choose-sum">CHOOSE SUM (IN RUPEES)</p>
+          <ul className="denominations-list">
+            {denominationsList.map(eachDenomination => (
               <DenominationItem
                 Key={eachDenomination.id}
                 denominationDetails={eachDenomination}
@@ -51,7 +51,7 @@ class CashWithdrawal extends Component {
       </div>
     )
   }
-} 
+}
 
 export default CashWithdrawal
 
