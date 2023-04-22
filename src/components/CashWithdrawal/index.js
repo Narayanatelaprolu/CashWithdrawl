@@ -41,7 +41,7 @@ class CashWithdrawal extends Component {
           <ul className="denominations-list">
             {denominationsList.map(eachDenomination => (
               <DenominationItem
-                Key={eachDenomination.id}
+                key={eachDenomination.id}
                 denominationDetails={eachDenomination}
                 updateBalance={this.updateBalance}
               />
